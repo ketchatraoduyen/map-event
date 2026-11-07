@@ -14,23 +14,21 @@ button{font:inherit;font-size:15px;padding:8px 14px;border:1px solid var(--bd);b
 button[aria-pressed="true"]{background:var(--ac);color:var(--ac2);border-color:var(--ac)}
 #wrap{flex:1;min-height:360px;border:1px solid var(--bd);border-radius:10px;overflow:hidden}
 canvas{display:block;width:100%;height:100%;touch-action:none;cursor:grab}
-#cap{font-size:15px;line-height:1.6;margin:0;max-width:80ch}
 #hint{font-size:13px;color:var(--mu);margin:0}
 .sp{flex:1}
 </style></head><body>
 <div id="app">
 <div class="row" id="tabs">
-<button data-p="all" aria-pressed="true">Toàn trường</button>
-<button data-p="st" aria-pressed="false">Sân khấu</button>
+<button data-p="all" aria-pressed="true">Overview</button>
+<button data-p="st" aria-pressed="false">Stage</button>
 <button data-p="ck" aria-pressed="false">Check-in</button>
-<button data-p="aud" aria-pressed="false">Góc khán giả</button>
+<button data-p="aud" aria-pressed="false">Audience view</button>
 <span class="sp"></span>
-<button id="tf" aria-pressed="true">Luồng đi</button>
-<button id="tl" aria-pressed="true">Nhãn</button>
+<button id="tf" aria-pressed="true">Flow</button>
+<button id="tl" aria-pressed="true">Labels</button>
 <button id="zi" aria-label="Phóng to">+</button><button id="zo" aria-label="Thu nhỏ">−</button>
 </div>
 <div id="wrap"><canvas id="cv"></canvas></div>
-<p id="cap">Hội trường C và sân khấu nằm phía trên, ghế ngồi nằm giữa sân khấu và đài phun nước, đài phun nước ở phía dưới ghế. Hai bên là khung gỗ treo tranh ảnh triển lãm. Check-in và photobooth nằm phía sau đài phun nước (sau lưng khu ghế), ngay trong lối vào từ cổng làng. Chấm hồng là luồng từ cổng chính (36 Xuân Thủy), chấm xanh là luồng từ cổng phụ (43 Nguyễn Phong Sắc), chấm vàng là lối từ check-in lên khu ghế.</p>
 <p id="hint">Kéo để xoay, cuộn hoặc bấm +/− để thu phóng. Mô hình dựng theo sơ đồ trường, tỉ lệ chỉ là ước lượng.</p>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
